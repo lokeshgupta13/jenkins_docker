@@ -1,16 +1,16 @@
-jenkinsdata:
+data:
  build: jenkins-data
  
-jenkinsmaster:
+master:
   build: jenkins-master
   volumes_from:
-    - jenkinsdata
+    - data
   ports:
     - "50000:50000"
 
-jenkinsnginx:
+nginx:
   build: jenkins-nginx
   ports:
-     - "6080:80" # Need to make this configurable, as we'll want 80:80 in 'prod' environments
+     - "${HTTP_PORT}:80" # Need to make this configurable, as we'll want 80:80 in 'prod' environments
   links:
-     - jenkinsmaster:jenkinsmaster
+     - master:jenkins-master
