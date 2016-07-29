@@ -35,7 +35,7 @@ Note that, by default, this is configured to run the ``nginx`` web server on por
 # Seeing the Jenkins Log
 You can't ssh into the Jenkins server, but you can see the log files using ``docker exec``
 
-    docker exec iesjenkins_data_1master_1 tail -n 1000 -f /var/log/jenkins/jenkins.log
+    docker exec iesjenkins_master_1 tail -n 1000 -f /var/log/jenkins/jenkins.log
 
 # Backup and Restore
 
