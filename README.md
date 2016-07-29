@@ -1,6 +1,6 @@
 # Hello, World
 
-This respository contains the (Docker)[https://docker.io] configuration for the IES Jenkins Build Server. Using this information, you can
+This respository contains the [Docker](https://docker.io) configuration for the IES Jenkins Build Server. Using this information, you can
 swiftly setup a Jenkins server.
 
 Note that the actual Jenkins configuration data doesn't live in this - that's internal to the running server. However, it can be exported
