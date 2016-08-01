@@ -3,6 +3,8 @@ data:
  
 master:
   build: jenkins-master
+  volumes:
+    - .:/backup
   volumes_from:
     - data
   ports:
