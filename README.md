@@ -17,7 +17,7 @@ Using Docker Compose:
     # docker-compose rm
     # Remove just the process containers. NB: Will prompt
     
-    docker-compose rm jenkinsmaster jenkinsnginx
+    docker-compose rm master nginx
     # build all the containers
     docker-compose build
     
